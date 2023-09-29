@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+  
+body {
+    color: #002060;
+    background-color: #F7F9FC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Filters */
+
+/* General container for centering */
+.container {
+    max-width: 600px; /* Adjust this for your preference */
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background-color: #fff;
+    justify-content: center;
+}
+
+/* Add spacing between filter inputs */
+.filter-input {
+    margin-bottom: 20px;
+}
+
+/* Label styling for better readability */
+.filter-label {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Style for the range slider container */
+.range-slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centering the range input horizontally */
+    justify-content: center; /* Centering the content vertically */
+    width: 100%; /* Making sure it takes the full width */
+    margin: 5% auto; /* Ensures the element stays centered in its parent container */
+}
+
+/* Adjust the noUi-slider width */
+.noUi-target {
+    width: 70% !important;
+}
+
+#range-values {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+/* Button Style */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    display: inline-block;
+}
+
+.primary-btn {
+    background-color: #002060;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+.primary-btn:hover {
+    background-color: #003080;
+}
+
+.secondary-btn {
+    background-color: #ddd; /* Slightly gray for contrast */
+    color: #555;
+}
+
+.secondary-btn:hover {
+    background-color: #ccc; /* A bit darker on hover */
+}

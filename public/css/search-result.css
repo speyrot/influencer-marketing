@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+
+/* General Resets and Typography */
+* {
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    background-color: #f2f2f2; /* For a light gray background (optional) */
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.influencer-card {
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px auto; /* Centered horizontally with automatic margins and 20px top/bottom spacing */
+    max-width: 600px;
+    width: 100%;  /* Allows the card to be responsive */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.influencer-card h3 {
+    margin-top: 0;
+    color: #002060;
+}
+
+.influencer-card .profile-pic {
+    border-radius: 50%;
+    margin: 20px 0;
+    width: 80px;
+    height: 80px;
+}
+
+.details-wrapper {
+    display: flex;
+    width: 100%;
+}
+
+.left-details, .right-details {
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center the content */
+    align-items: center;     /* Horizontally center the content */
+}
+
+p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.back-button-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.btn.go-back-btn {
+    background-color: #f5f5f5;
+    color: #333;
+    border-radius: 25px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+
+    &:hover {
+        background-color: #e0e0e0;
+        transform: translateY(-2px);
+    }
+
+    &:active {
+        transform: translateY(0);
+    }
+}
+

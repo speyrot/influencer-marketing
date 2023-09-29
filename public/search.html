@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/search.css">
+    <link rel="stylesheet" href="/css/search-result.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nouislider@14.7.0/distribute/nouislider.min.css">
+    <title>Search Influencers</title>
+</head>
+<body>
+
+    <form action="/search-influencers" method="post">
+        
+        <div class="container">
+
+            <h2>Search for Influencers</h2>
+
+            <!-- Name search -->
+            <div class="filter-input">
+                <label class="filter-label" for="searchQuery">Search by Name:</label>
+                <input type="text" id="searchQuery" name="searchQuery">
+            </div>
+
+            <!-- Gender filter -->
+            <div class="filter-input">
+                <label class="filter-label">Gender:</label>
+
+                <label class="gender-option">
+                    <input type="radio" name="gender" value="male"> Male
+                </label>
+
+                <label class="gender-option">
+                    <input type="radio" name="gender" value="female"> Female
+                </label>
+            </div>
+        
+            <!-- Niche search -->
+            <div class="filter-input">
+                <label class="filter-label" for="nicheQuery">Search by Niche:</label>
+                <input type="text" id="nicheQuery" name="niche">
+            </div>
+
+            <!-- Age range slider -->
+            <div class="filter-input">
+                <label class="filter-label">Age Range:</label>
+
+                <div class="range-slider">
+                    <div id="age-slider"></div>
+                    <input type="hidden" name="minAge" id="minAgeValue">
+                    <input type="hidden" name="maxAge" id="maxAgeValue">
+                    <span id="age-range-values">0 - 100</span> <!-- You can adjust this range based on your preference -->
+                </div>
+            </div>
+
+            <!-- Follower range slider -->
+            <div class="filter-input">
+                <label class="filter-label">Follower Range:</label>
+
+                <div id="follower-slider" class="range-slider"></div>
+                <span id="range-values">0 - 30,000,000</span>
+                <!-- Hidden inputs to store the values -->
+                <input type="hidden" name="minFollowers" id="minFollowersValue">
+                <input type="hidden" name="maxFollowers" id="maxFollowersValue">
+            </div>
+
+            <div class="button-group">
+                <a href="/" class="btn secondary-btn">Back</a>
+                <input type="submit" value="Search" class="btn primary-btn">
+            </div>
+
+        </div>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/nouislider@14.7.0/distribute/nouislider.min.js"></script>
+    <script src="./js/search.js"></script>
+    
+</body>
+</html>
