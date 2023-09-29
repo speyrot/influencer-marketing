@@ -1,5 +1,5 @@
 # This is a comment in .gitignore
 node_modules/  # Ignore the node_modules directory
-*.log          # Ignore all .log files
+*.log         # Ignore all .log files
 .env           # Ignore .env files (commonly used for environment variables)
 .DS_Store      # Ignore .DS_Store (a macOS system file)
